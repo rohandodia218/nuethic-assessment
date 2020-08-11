@@ -1,0 +1,598 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+.main-content{
+    height:"100%";
+    width:"100%";
+    
+}
+.container{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.img{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+
+}
+.logo{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-right{
+    float: right;
+    margin-top: -2px;
+    position: relative;
+}
+.nav-left{
+    float: left;
+    margin: 0;
+    position: relative;
+    
+
+}
+.nav-left .nav-items{
+    padding: 0;
+    align-items: left;
+}
+.nav-right li{
+    display: inline-block;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-left li{
+    display: inline-block;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.nav-right li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+
+}
+.nav-left li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.toggle-button-right{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    width: 30px;
+}
+.toggle-button-left{
+    position: absolute;
+    top: .75rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 21px;
+    width: 30px; 
+}
+
+.toggle-button-right .bar, .toggle-button-left .bar{
+    height: 3px;
+    width: 100%;
+    background-color:gray;
+    border-radius:10px
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color:gray;   
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 50px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a {
+    background-color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.banner-section{
+    position: relative;  
+    overflow: hidden;
+    display: block;
+    width: 100%
+
+}
+.banner{
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+
+    
+}
+
+.banner img{
+    max-width: 100%;
+    margin: auto;
+
+}
+
+.text{
+    position: absolute;
+    display: inline-block;
+    top:50%;
+    background-color: white;
+    text-align: center;
+    height: auto;
+    width: auto;
+    padding: 30 60 30 60;
+    left: 50%;
+    transition-duration: 0.3s;
+    align-items: center;
+    transform: translate(-50%, -50%);
+
+}
+.text h4, h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.banner-btn{
+    outline-style: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    transition-duration: 0.3s;
+    font-size: 20px;
+    opacity: 0.6;
+    
+}
+.banner-btn:hover{
+    text-decoration: underline;
+    transition-property: initial;
+    opacity: 1;
+}
+.text:hover{
+    padding: 40 70 40 70;
+}
+
+
+  
+.categories-title{
+    display: block;
+    position: relative;
+    border-color: black;
+    text-align: center;
+    
+}
+  
+.categories-title .title-header{
+    position: relative;
+    display: block;
+    
+      
+}
+
+
+  
+.categories-title .title-header h4{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+
+        
+}
+  
+.categories-title .logo{
+    display: flex;
+    position: relative;
+        
+}
+  
+.categories-title .title-logo .title-body{
+    display: inline-block;
+}
+.categories-title .title-logo .title-body h2{
+    margin:auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.categories-title .title-logo .title-img{
+    display: inline-block;
+    align-items: center;
+}
+
+.menu-div{
+    padding-top: 50px;
+
+}
+.menu-div .menu-btn{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    transition-duration: 0.3s;
+}    
+
+.menu-btn li{
+    background-color: white; /* Green background */
+    color: darkgray; /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    border: none;
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-left: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 15px;  
+    outline: none;
+    list-style-type: none;
+    transition-duration: 0.3s;
+
+}
+
+.menu-btn li:hover{
+    text-decoration: underline;
+    border: none;
+    text-shadow: 3px 3px 6px black;
+    color: black;
+    
+    
+}
+
+#p, #p1{
+    width: 70%;
+    border: 3px black;
+    margin-left: 19%;
+    margin-right: auto;
+    padding-left: 0px;
+
+    
+}
+.checked{
+    color:orange;
+}
+.product{
+    display: inline-block;
+    padding-right: 15px;
+    margin-top: 30px;
+    position: relative;
+    ;
+}
+.desc{
+    display: block;
+    padding-top: 8px;
+}
+.desc .name{
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    padding:auto;
+    margin-top: 0px;
+
+}
+.desc .price{
+    position: relative;
+    display: inline-block;
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    padding:0;
+    margin:0;
+}
+
+.rating{
+    padding: auto;
+    margin-top: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+}
+.owner{
+    margin-top: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+}
+
+.product-img img{
+    transition: ease-in;
+    transition-duration: 0.3s;
+
+}
+.product-img img:hover{
+    -webkit-transform: scale(1.04);
+}
+
+[data-tab-content]{
+    display: none;
+}
+.active[data-tab-content]{
+    display: inline-block;
+}
+
+.contact{
+    display: block;
+    margin: auto;
+}
+.contact h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.contact-form{
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    position: relative;
+    display: inline-block;
+    margin-left: 25%;
+    display: block;
+    margin-top: 100px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat",sans-serif;
+  }
+  .contact-form h1{
+    margin-top: 0;
+    font-weight: 200;
+    display: block;
+    
+  }
+  .txtb{
+    border:1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+  }
+  .txtb label{
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .txtb input,.txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+  }
+  .btn{
+    display: inline-block;
+    background: lightblue;
+    padding: 14px 0;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+
+
+
+
+
+  @media (max-width: 950px){
+        .toggle-button-right    {
+            display: flex;
+            
+            
+            
+        }
+        .toggle-button-left    {
+            display: none;
+        }
+        .nav-right{
+            position: relative;
+            flex-direction: column;
+            margin-top: 35px;           
+            z-index: 1;   
+        }
+        
+        .nav-right .nav-items li{
+            flex-direction: column;
+            position: relative;
+            padding-top: 15px;
+            margin: auto;  
+        }
+        .nav-right .nav-items a:hover{
+            background-color: lightgray;            
+        }
+        .nav-right .nav-items{
+            display: none ;
+            flex-direction: column; 
+            position: relative;                              
+        }
+
+        .dropdown .dropbtn{
+            display: flex;
+        }
+        
+        
+        .nav-right .nav-items.active{
+            display: flex;
+            position: relative;
+            margin-top: 5px;
+            margin-right: 50px;
+            padding:0;     
+            background-color: #f9f9f9;       
+        }
+        .nav-right .nav-items.active a:hover{
+            background-color: lightgray;
+        }
+
+        .container{
+            display: inline-block;
+            position: relative;
+            width: 100%
+            
+        }
+        .img{
+            display: inline-block;
+            position: relative;
+            margin:0;
+            padding: 0;
+            
+            
+        }
+        .logo{
+            display: flex;
+            display: inline-block;
+            margin: 0;
+        
+          
+        }
+        .nav-left{
+            position: absolute;
+            display: block;
+            margin-top: 35px;
+            z-index: 1;
+
+        }
+        .nav-left .nav-items{
+            padding-left: 0%;
+        }
+        
+        .nav-left .nav-items li a{
+            padding: 1px;
+        }
+
+        .banner-section{
+            position: relative;
+ 
+            display: inline-block;
+            margin-top: 50px;
+            padding: 0;
+            
+        }
+        .banner{
+            position: relative;
+            height: auto;
+            display: inline-block;
+            justify-content: center;
+            max-width: auto;
+        
+            overflow: hidden;
+        }
+        .text:hover{
+        }
+        
+        .banner img{
+        
+            max-width: auto;
+            display: relative;
+            background-position: center;
+        
+        }
+        
+        .text{
+            position: absolute;
+            display: inline-block;
+            background-color: gray;
+            text-align: center;
+            transition-duration: 0.3s;
+            align-items: center;
+            height: fit-content;
+            width: fit-content;
+            
+        }
+
+        .categories-title{
+            display: block;
+            position: relative;
+
+          
+        }
+        .menu-div{
+            padding-top: 20px;
+        }
+        .menu-btn li{
+            background-color: white; /* Green background */
+            color: darkgray; /* White text */
+            cursor: pointer; /* Pointer/hand icon */
+            border: none;
+            margin-top: 25px;
+            margin-right: 10px;
+            margin-left: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+            font-size: 15px;  
+            outline: none;
+            list-style-type: none;
+        }
+            
+        #p, #p1{
+            width: 70%;
+            border: 3px black;
+            margin-left: 30%;
+            margin-right: auto;
+            padding-left: 0px;
+        
+            
+        }
+        .contact-form{
+            width: 85%;
+            max-width: 600px;
+            background: #f1f1f1;
+            position: relative;
+            display: inline-block;
+            margin-left: 10%;
+            margin-bottom: 50px;
+            display: block;
+            margin-top: 100px;
+            padding: 30px 40px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 20px #000000b3;
+            font-family: "Montserrat",sans-serif;
+          }
+            
+     
+  }  
